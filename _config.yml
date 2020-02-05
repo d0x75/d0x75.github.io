@@ -21,7 +21,7 @@
 title: d0x75
 email: duds.dev@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Reverse engeneering, Exploits, File Formats , Windows tricks
+  Reverse engeneering,Exploits,File Formats,Windows tricks
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: dudsdev
