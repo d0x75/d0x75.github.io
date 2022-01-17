@@ -1,7 +1,7 @@
 # 1. Site Settings
 title               : SRE
 owner               : "d0x75"
-url                 : ""
+url                 : "https://d0x75.github.io/"
 #baseurl             : "http://localhost:4000"
 permalink           : /:title/
 description         : "reversing everything"
