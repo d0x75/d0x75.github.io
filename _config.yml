@@ -1,0 +1,109 @@
+# 1. Site Settings
+title               : SRE
+owner               : "d0x75"
+url                 : "http://localhost:4000"
+#baseurl             : "http://localhost:4000"
+permalink           : /:title/
+description         : "reversing everything"
+markdown            : kramdown
+statement           : "reversing everything"
+bgtext              : "ABCFGHKLMNPQRSVWXYZabcdefghijklmnopqrstuvwxyz@#$%&*+-;/[]<>~" # texts randomly displayed in background
+
+# 2. Your Collections
+# You can specify the order shown in Archive window. 
+# Keep it null if you want to show items in alphabetic order.
+collection_order    : 
+  [
+    "crackmes",
+    "research",
+    #"programming",
+    "POC",
+    "posts",
+  ]
+collections:
+  research:   
+    output          : true
+    permalink       : /:collection/:title/
+    sort_by         : date
+    alias           : "Research"
+  crackmes:
+    output          : true
+    permalink       : /:collection/:title/
+    #order: # specify post order manually
+    #  - crackme-1.md
+    #  - post2.md
+    #  - post1.md
+ # programming:
+ #   output          : true
+ #   permalink       : /:collection/:title/
+ #   sort_by         : date
+  POC:
+    output          : true
+    permalink       : /:collection/:title/
+    # An alias should be given or the UNDERSCORE will appeared 
+    alias           : "POCs"
+  posts:
+    output          : true
+
+# 3. Comment settings（disqus.com）
+disqus_username     : p0x75dge
+
+# 4. Default page settings (WILL BE overwriten by front-matters of a page)
+defaults:
+  -    
+    scope:
+      path          : ""  # an empty string here means all files in the project
+    values:
+      layout              : "post"      # which layout to use by default
+      publish             : true        # whether to show by default      
+      btn_text            : true        # whether show button text by default
+      collection_list     : true        # whether show archive button by default
+      home_btn            : true        # whether show home by default
+      maximize            : true        # whether show maximize button by default
+      encrypted_text      : false       # whether use encrytion function by default
+      toc                 : true        # whether show table of content by default
+      toc_level           : 3           # the toc depth by default
+      author              : "d0x75"     # author name by default
+      show_date           : true        # whether show date message by default
+      category            :             # category by default
+      post_list           : false       # whether show list of post by default      
+      comment             : true
+      footer              : true        # whether show footer by default
+
+# 5. Social Media Accounts
+email               : "duds.dev@gmail.com" 
+linkedin            : 
+github              : "d0x75" 
+#gitlab              : 
+website             : "https://d0x75.github.io"
+twitter             : "dudsdev"
+#facebook            : "dudsdev"
+#instagram           : 
+#youtube             : "just-test"
+#steam               : "d0x75"
+weibo               :
+      
+# 6. Where things are
+source              : .
+destination         : ./_site
+collections_dir     : collections
+plugins_dir         : src/_plugins # takes an array of strings and loads plugins in that order
+layouts_dir         : src/_layouts
+data_dir            : src/_data
+includes_dir        : src/_includes
+sass:
+  sass_dir          : src/_sass
+
+# 7. Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  
+gems: [jekyll-mermaid]
+
+# 8. Others
+# Cross-Origin Resource Sharing header
+webrick:
+  headers:
+    Access-Control-Allow-Origin: "*"
