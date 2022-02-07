@@ -1,12 +1,12 @@
 # 1. Site Settings
-title               : SRE
+title               : RedTeamBox
 owner               : "d0x75"
 url                 : "https://d0x75.github.io/"
 #baseurl             : "http://localhost:4000"
 permalink           : /:title/
-description         : "reversing everything"
+description         : "Read Team"
 markdown            : kramdown
-statement           : "reversing everything"
+statement           : "red team stuff"
 bgtext              : "ABCFGHKLMNPQRSVWXYZabcdefghijklmnopqrstuvwxyz@#$%&*+-;/[]<>~" # texts randomly displayed in background
 
 # 2. Your Collections
@@ -16,7 +16,7 @@ collection_order    :
   [
     "crackmes",
     "research",
-    #"programming",
+    #"programming",s
     "POC",
     "posts",
   ]
@@ -46,7 +46,7 @@ collections:
     output          : true
 
 # 3. Comment settings（disqus.com）
-disqus_username     : p0x75dge
+disqus_username     : d0x75
 
 # 4. Default page settings (WILL BE overwriten by front-matters of a page)
 defaults:
