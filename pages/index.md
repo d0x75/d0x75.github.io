@@ -15,6 +15,7 @@ permalink: /
 # Red Team
 
 <br>
+
 >O conteúdo desse página é inteiramente voltado para coisas voltadas para Red Team.
 
 ## Objetivos
