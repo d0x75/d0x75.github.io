@@ -19,7 +19,7 @@ módulo/processo local do próprio binário compilado com os bytes de shellcode 
 
 #### Step 1 
 
-- Gerar os bytes do shellcode para Windows x86, apontando para o IP do computador que vai ganhar o acesso.
+- Gerar os bytes do shellcode para Windows x86, apontando para o IP e Porta do computador que vai ganhar o acesso.
 
 
 ```ruby

@@ -17,7 +17,7 @@ no caso é feito em outro módulo/processo que está em execução no computador
 
 #### Step 1
 
-- Gerar os bytes do shellcode para Windows x86, apontando para o IP do computador que vai ganhar o acesso.
+- Gerar os bytes do shellcode para Windows x86, apontando para o IP e Porta do computador que vai ganhar o acesso.
 
 
 
