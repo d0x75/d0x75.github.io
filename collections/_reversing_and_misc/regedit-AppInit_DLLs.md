@@ -14,14 +14,15 @@ category: post
 #### Procedimento que deve ser feito no regedit:
 
 
-- Seguir o seguinte caminho até a chave de registro : 
+- Seguir o seguinte caminho até a chave de registro :
+
 
 ```text
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows
 ```
 
-
 - Chegando na reg key acima, clicamos com o botão direito nela, para modificar seu valor. Ficaria mais ou menos assim:
+
 
 ```text
 name 	 = AppInit_DLLs (NOME DA CHAVE QUE TEMOS QUE MODIFICAR)
