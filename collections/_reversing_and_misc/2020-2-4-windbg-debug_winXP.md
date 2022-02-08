@@ -1,5 +1,5 @@
 ---
-title: Debugging Windows XP Kernel Mode
+title: Windbg - Debugging Windows XP Kernel Mode
 category: post
 date: 2020-2-4
 ---

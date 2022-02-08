@@ -1,5 +1,5 @@
 ---
-title: Reversing 0x04
+title: Windows - Carregamento paralelo de DLLs
 category: post
 ---
 

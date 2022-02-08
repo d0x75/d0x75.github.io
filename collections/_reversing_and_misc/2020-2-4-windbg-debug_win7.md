@@ -1,5 +1,5 @@
 ---
-title: Debugging Windows 7 Kernel Mode
+title: Windbg - Debugging Windows 7 Kernel Mode
 category: post
 date: 2020-2-4
 ---

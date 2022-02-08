@@ -1,5 +1,5 @@
 ---
-title: Disabilitar ASLR 0x03
+title: Windows - Disabilitar ASLR
 category: post
 ---
 

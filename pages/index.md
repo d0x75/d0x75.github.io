@@ -16,9 +16,8 @@ permalink: /
 
 <br>
 
->Esse site é inteiramente dedicado a assuntos voltadas para
-Offensive Security, e meu foco vai ser em tornar um Operador de
-RedTeam.
+>Esse site é inteiramente dedicado a assuntos voltadas para Offensive Security, meu foco é me tornar um
+Operador de RedTeam.
 
 
 ## Objetivos
