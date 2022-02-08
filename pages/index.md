@@ -20,7 +20,13 @@ permalink: /
 
 ## Objetivos
 
-- Engenharia Reversa
-- Attacks
-- Programming
-- Posts e Artigos que eu escrevo sobre temas variados.
+- Entender como diversos ataques cibernéticos funcionam e aplicar em um ambiente
+de testes para fins de estudo.
+
+- Aprender como malwares são escritos, e escrever exemplos genéricos para estudo.
+
+- Escrever códigos para simular ferramentas de ataque e técnicas usadas por malwares.
+
+- Aprofundar aprendizado em Reversing,C++,Windows Internals e Windows API.
+
+- Teçer notas sobre todo aprendizado!
