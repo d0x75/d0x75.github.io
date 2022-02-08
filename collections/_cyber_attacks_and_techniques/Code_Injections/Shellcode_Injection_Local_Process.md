@@ -99,6 +99,7 @@ alvo.
 
 
 ```bash
+nc -vlp 1234
 listening on [any] 1234 ...
 192.168.10.109: inverse host lookup failed: Host name lookup failure
 connect to [192.168.10.113] from (UNKNOWN) [192.168.10.109] 49173

