@@ -4,6 +4,9 @@ category: post
 date: 2020-2-4
 ---
 
+>Passos do setup necessário para fazer o debugger de
+um Windows 7
+
 
 Setup VM-1 ( Debugger )
 -------------------------
@@ -26,7 +29,7 @@ Setup VM-1 ( Debugger )
 
 		SRV*C:\Symbols*https://msdl.microsoft.com/download/symbols
 
-	
+
 - Após terminar o setup e desligar a máquina
 
 - Ir até os menu do virtual box, clicar em 'Configurações'
@@ -49,9 +52,7 @@ Setup VM-2 ( Debugged )
 ------------------------- 
 
 - Iniciar o Windows 7
-- Fazer o setup do 'bcdedit', para habilitar a opção de debugger; para conseguirmos debuggar o SO.
-- Via cmd fazemos o seguinte:
-
+- Fazer o setup do 'bcdedit', para habilitar a opção de debugger; para conseguirmos debuggar o SO. Via cmd :
 
 ```DOS
 bcdedit /copy {current} /d "Debug me"
