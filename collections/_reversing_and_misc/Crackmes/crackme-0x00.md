@@ -5,9 +5,9 @@ title: Crackme 0x00
 Fala galera blza?, primeiramente .. Obrigado por compartilhar esse Crackme e fico muito feliz em poder analisar-lo.
 Abaixo coloquei algumas informações que levantei durante a análise deste binário, e por fim vou mostrar como resolver o Crackme.
 
-Informações Complementares
---------------------------
-ID at crackmes.one : 60b92a0433c5d410b8842bd3
+#### Informações Complementares
+
+```ID at crackmes.one : 60b92a0433c5d410b8842bd3```
 
 - Tipo de arquivo : PE EXE
 - Compilador/Linguagem : MinGW(GCC: (i686-posix-dwarf-rev0, Built by MinGW-W64 pr)[C/C++]
@@ -20,8 +20,8 @@ ID at crackmes.one : 60b92a0433c5d410b8842bd3
 ---
 
 
-Dicas para resolver/path
--------------------------
+#### Dicas para resolver/path
+
 
 1. Função Principal pra analisar : CALL (em 0x401386 ) e Prólogo da mesma ( em 0x4015C0 )
 
@@ -29,11 +29,9 @@ Dicas para resolver/path
 descobrir a key.
 
 
----
 
+### Resolvendo o Crackme
 
-Resolvendo o Crackme
-=====================
 
 Vamos direto para o endereço do início da rotina principal (em 0x4015C0 ) para começarmos a resolver o Crackme. Os trechos de código que vemos no
 debugger a partir do endereço que seguimos, já nos mostra algumas CALLS que são feitas no console .. até que o programa solicite a 'Key'.
@@ -41,7 +39,7 @@ debugger a partir do endereço que seguimos, já nos mostra algumas CALLS que s�
 Após a função 'scanf' ler os bytes que digitamos no console, são movidos 2 valores para a Stack ( em 0x401612 e 0x40161A ) que posteriormente são
 usados na função 'strcmp' para comparar com os dados digitados pelo usuário. Conforme trecho de código abaixo, copiado do debugger :
 
-```
+```text
 00401612 | C74424 1C 30372F31       | mov dword ptr ss:[esp+1C],312F3730 |
 0040161A | C74424 20 302F3937       | mov dword ptr ss:[esp+20],37392F30 |
 ```
@@ -62,7 +60,7 @@ Se montarmos uma string com esses valores movidos para a Stack, temos a seguinte
 - resolvendo o crackme com a key encontrada :
 
 
-```
+```DOS
 Hello My Name is Saptam
 
 To Open this Program You have to Enter My Date of Birth
