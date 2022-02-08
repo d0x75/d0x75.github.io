@@ -51,8 +51,9 @@ sessões, já saberemos que deu certo criar a sessão.
 
 > Feito isso temos o campo da Characteristics da sessão a seguinte 
 Flag :  **60000020** 
-( então provavelmente quando uma sessão tiver a flag '60000020' no campo Characteristics, é provavel que seja uma
+( então sabemos que quando a sessão tiver a flag **60000020** no campo Characteristics, é provavel que seja uma
 sessão de código executável ).
 
+---
 
 _Voilá! Sessão criada =). Agora é só assemblar do zero nela ou assemblar ajustando os bytes do shellcode importado para sessão_.
