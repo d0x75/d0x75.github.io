@@ -73,7 +73,9 @@ A partir daqui, nós conseguimos alterar o fluxo do programa naquele if (em 0x40
 *            Crackme by @Danofred0         *
 ********************************************
 
-Veuillez entrer le mot de passe pour acceder au contenu:   19082004
+Veuillez entrer le mot de passe pour acceder au contenu:   
+
+19082004
 
 True !!
 Pressione qualquer tecla para continuar. . .
