@@ -77,7 +77,7 @@ código responsável por executar os bytes gerados acima.
 injectremotePID.cpp
 ```
 
-- Depois de copiar os bytes gerados pelo msfvenom no Step 1, devemos colar esses bytes no conteúdo da variável  *unsigned char shellcode[] = ""* do código 'injectremotePID.cpp' e depois compilar-lo.
+- Copiar os bytes gerados pelo msfvenom no Step 1, em seguida devemos colar esses bytes no conteúdo da variável *unsigned char shellcode[] = ""* do código 'injectremotePID.cpp' e depois compilar-lo.
 
 - Ao compilar o software com sucesso teremos o executável pronto para uso.
 
@@ -95,7 +95,7 @@ injectremotePID.exe
 para vermos o PID podemos usar o "ProcessHacker" ou "procexp"
 ```
 
-- Abrir a porta que colocamos como argumento no msfvenom para gerar o shellcode, no computador que tem o IP que também colocamos como argumento no msfvenom para gerar o shellcode :
+- Abrir a porta que colocamos como argumento no msfvenom para gerar o shellcode, no computador com o IP que também colocamos como argumento no msfvenom para gerar o shellcode :
 
 
 ```cmd

