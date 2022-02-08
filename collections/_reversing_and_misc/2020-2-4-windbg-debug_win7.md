@@ -24,7 +24,7 @@ Setup VM-1 ( Debugger )
 4. Setar o seguinte valor para a variavel de ambiente criada :
 
 
-```SRV*C:\Symbols*https://msdl.microsoft.com/download/symbols```
+		SRV*C:\Symbols*https://msdl.microsoft.com/download/symbols
 
 	
 - Após terminar o setup e desligar a máquina
