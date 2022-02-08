@@ -23,10 +23,14 @@ Setup VM-1 ( Debugger )
 
 4. Setar o seguinte valor para a variavel de ambiente criada :
 
+
 ```SRV*C:\Symbols*https://msdl.microsoft.com/download/symbols```
 
+	
 - Após terminar o setup e desligar a máquina
-- Ir até os menu do virtual box, clicar em 'Configurações' 
+
+- Ir até os menu do virtual box, clicar em 'Configurações'
+
 - Clicar na opção Portas Seriais > Porta 1 e fazer o seguinte setup:
 
 
