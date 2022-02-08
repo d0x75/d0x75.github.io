@@ -1,5 +1,5 @@
 ---
-title: Code Injection - Injection Local Process
+title: Injeção de Código - Injection Local Process
 category: post
 ---
 
@@ -8,7 +8,7 @@ category: post
 Esse é o clássico Shellcode Injection que fazemos no módulo/processo local do próprio binário compilado com os 
 bytes do shellcode. 
 
-Quando o shellcode for executado com sucesso, ganhamos acesso na máquina alvo; Conforme PoC a seguir:
+Quando o shellcode for executado com sucesso, ganhamos acesso na máquina alvo; conforme faremos na prática a seguir:
 
 ---
 

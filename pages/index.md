@@ -20,8 +20,8 @@ permalink: /
 
 ## Objetivos
 
-- Entender como diversos ataques cibernéticos funcionam e aplicar em um ambiente
-de testes para fins de estudo.
+- Entender como diversos ataques cibernéticos funcionam e
+aplicar em um ambiente de testes para fins de estudo.
 
 - Aprender como malwares são escritos, e escrever exemplos genéricos para estudo.
 
@@ -29,4 +29,7 @@ de testes para fins de estudo.
 
 - Aprofundar aprendizado em Reversing,C++,Windows Internals e Windows API.
 
-- Teçer notas sobre todo aprendizado!
+- Documentar a utilização das ferramentas mais importantes para
+cybersecurity.
+
+- Teçer notas sobre tudo que vou aprendendo de novo!

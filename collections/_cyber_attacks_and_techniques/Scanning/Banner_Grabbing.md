@@ -1,10 +1,8 @@
 ---
-title: Banner Grabing
+title: Scanning - Banner Grabing
 category: post
 ---
 
-Banner Grabing
----------------
 
 
 Técnica utilizada para pegar o banner de algum serviço que esteja rodando no target alvo.
