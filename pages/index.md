@@ -12,11 +12,14 @@ encrypted_text: true
 permalink: /
 ---
 
-# Red Team
+# RedTeam Security
 
 <br>
 
->O conteúdo desse página é inteiramente voltado para coisas voltadas para Red Team.
+>Esse site é inteiramente dedicado a assuntos voltadas para
+Offensive Security, e meu foco vai ser em tornar um Operador de
+RedTeam.
+
 
 ## Objetivos
 
