@@ -14,20 +14,34 @@ https://github.com/d0x75/maleta/raw/main/die_win32_portable_2.05.zip
 #### Procedimento de criação de uma nova sessão de código executável em binários PE.
 
 
->1. Abrir o DIE e carregar o binário PE alvo. 
+- Abrir o DIE e carregar o binário PE alvo.
 
->2. Ir até as sessões do binário
+- Ir até as sessões do binário
 
->3. Desmarcar a flag na tela principal das sessões  "[] Read only"
-Feito isso vai habilitar abaixo os botões "Add new section" e "Delete last section".
+- Desmarcar a flag na tela principal das sessões  _[] Read only_
+Feito isso vai habilitar abaixo os botões : 
 
->4. Clicar no botão "Add new section", pra criar a nova sessão > Selecionar o arquivo com os bytes que usaremos na sessão. (um shellcode por exemplo)
-Podemos também colocar um arquivo em branco, apenas para criar a sessão.. e depois sim podemos colocar os bytes ref. aos código na sessão criada.
-Assim que a sessão nova aparecer na tela principal das sessões, já saberemos que deu certo criar a sessão.
+		"Add new section" e "Delete last section".
 
->5. Clicar com o botão direito na sessão criada > Edit header > Desmarcar "[] Read only" > Dar um nome para a sessão. ( ESSE PASSO É OPCIONAL )
+- Clicar no botão *Add new section*, pra criar a nova sessão.
 
->6. Clicar com o botão direito na sessão criada > Edit header > Ir até a flag Characteristics > Desmarcar "[] Read only" > Marcar as seguintes flags :
+- Selecionar o arquivo com os bytes que usaremos na sessão. 
+(um shellcode por exemplo)
+
+PS : Podemos também colocar um arquivo em branco, apenas para criar a sessão.. e depois sim podemos colocar os bytes ref. aos código na sessão criada.
+
+- Assim que a sessão nova aparecer na tela principal, onde ficam as outras
+sessões, já saberemos que deu certo criar a sessão.
+
+- Agora para nomear essa sessão, clicamos com o botão direito na sessão criada e fazemos o seguinte :
+
+		Edit header > Desmarcar "[] Read only" > Name: Dar um nome para a sessão.
+
+- Agora para atribuir as permissões/flags padrões de uma sessão de código, clicamos com o botão direito na sessão criada e fazemos o seguinte : 
+
+		Edit header > Entrar em Characteristics > Desmarcar "[] Read only"
+
+- E marcar as seguintes flags :
 
 ```c++
 [X] CNT_CODE 
@@ -35,7 +49,8 @@ Assim que a sessão nova aparecer na tela principal das sessões, já saberemos 
 [X] MEX_READ
 ```
 
-> Feito isso temos o campo da Characteristics da sessão a seguinte Flag :  **60000020** 
+> Feito isso temos o campo da Characteristics da sessão a seguinte 
+Flag :  **60000020** 
 ( então provavelmente quando uma sessão tiver a flag '60000020' no campo Characteristics, é provavel que seja uma
 sessão de código executável ).
 
