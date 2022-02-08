@@ -31,7 +31,6 @@ aplicar em um ambiente de testes para fins de estudo.
 
 - Aprofundar aprendizado em Reversing,C++,Windows Internals e Windows API.
 
-- Documentar a utilização das ferramentas mais importantes para
-cybersecurity.
+- Aprofundar o aprendizado e prática na utilização de ferramentas importantes para cybersecurity.
 
 - Teçer notas para consultas futuras..
