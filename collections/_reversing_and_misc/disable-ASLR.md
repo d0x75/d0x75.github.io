@@ -22,9 +22,10 @@ https://github.com/d0x75/maleta/raw/main/die_win32_portable_2.05.zip
 - Ir na opção "..." DLLCharacteristics
 - Desmarcar []Read only, para podermos editar.
 
-- Agora para Desabilitar o ASLR desmarcar a``[]DYNAMIC_BASE``
+- Agora para Desabilitar o ASLR desmarcar a ``[]DYNAMIC_BASE``
 
 _O campo **DYNAMIC_BASE** do Optional Header, é o bit que define como ligado/desligado randomização dos endereços de memória do binário_.
+
 
 ```text
 DYNAMIC_BASE = 0/desmarcado (desabilitado)
