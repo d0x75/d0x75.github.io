@@ -1,11 +1,18 @@
 ---
-title: Reversing 0x00
+title: Criar Sessão de Código em Binários PE.
 category: post
 ---
 
-### Procedimento de criação de uma nova sessão de código executável em binários PE.
+>Para facilitar a criação da Sessão de Código usaremos :
+``DIE ( Direct it easy versão 2.05 )``
+link para download :
+https://github.com/d0x75/maleta/raw/main/die_win32_portable_2.05.zip
 
-Criando Sessão de Código em um binário Usando o ``DIE ( Direct it easy versão 2.05 )``
+---
+
+
+#### Procedimento de criação de uma nova sessão de código executável em binários PE.
+
 
 1. Abrir o DIE e carregar o binário PE alvo. 
 
@@ -22,15 +29,15 @@ Assim que a sessão nova aparecer na tela principal das sessões, já saberemos 
 
 6. Clicar com o botão direito na sessão criada > Edit header > Ir até a flag Characteristics > Desmarcar "[] Read only" > Marcar as seguintes flags :
 
-		[X] CNT_CODE 
-		[X] MEM_EXECUTE
-		[X] MEX_READ
+```c++
+[X] CNT_CODE 
+[X] MEM_EXECUTE
+[X] MEX_READ
+```
 
-
-Feito isso temos o campo da Characteristics da sessão a seguinte Flag :  **60000020** 
+> Feito isso temos o campo da Characteristics da sessão a seguinte Flag :  **60000020** 
 ( então provavelmente quando uma sessão tiver a flag '60000020' no campo Characteristics, é provavel que seja uma
 sessão de código executável ).
 
----
 
-Voilá! Sessão criada =). Agora é só assemblar do zero nela ou assemblar ajustando os bytes do shellcode importado para sessão.
+_Voilá! Sessão criada =). Agora é só assemblar do zero nela ou assemblar ajustando os bytes do shellcode importado para sessão_.
