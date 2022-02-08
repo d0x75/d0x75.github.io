@@ -12,7 +12,7 @@ https://github.com/d0x75/Injector-LocalProcess.git
 **Windows CreateRemoteThread Shellcode Injection and Execution in Local Process**
 
 >Esse é a clássica Injeção de Shellcode que fazemos no
-módulo/processo local do próprio binário que será compilado com os bytes de shellcode que será injetado. 
+módulo/processo local do próprio binário compilado com os bytes de shellcode que será injetado. 
 
 >Quando o shellcode for executado com sucesso, ganhamos acesso na máquina alvo; conforme faremos nos passos a diante:
 
