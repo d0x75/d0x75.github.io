@@ -13,7 +13,7 @@ https://github.com/d0x75/DoS-Clang_Linux.git
 
 >DoS é um ataque de negação de serviço que é feito para prejudicar o pilar da Disponibilidade dos dados.
 
->Nesse caso se trata de um DoS bem simplório, que irá apenas ficar fazendo conexões repetidamente.. afim de sobrecarregar o Host e consequentemente derrubar-lo.
+>Nesse caso se trata de um DoS bem simplório, que irá apenas ficar fazendo requisições repetidamente.. afim de sobrecarregar o Host e consequentemente derrubar-lo.
 
 
 
@@ -33,7 +33,7 @@ https://github.com/d0x75/DoS-Clang_Linux.git
 
 
 ```bash		
-gcc DoS-linux.c -o DoSS
+gcc DoS-linux.c -o DoS
 ```
 
 ### Step 3
@@ -41,7 +41,8 @@ gcc DoS-linux.c -o DoSS
 - Se possível ligar uma VPN ou outro mecanismo que
 esconda o IP do dispositivo atacante.
 	
-- Executar o programa compilado no Step 2, passando o IP e a Porta do Alvo para que as o programa faça as REQUESTS.
+- Executar o programa compilado no Step 2, e passar
+como argumento o Host e a Porta do alvo, que ficará recebendo as Resquests do atacante.
 
 exemplos :
 
