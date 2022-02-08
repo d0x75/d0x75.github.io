@@ -4,7 +4,7 @@ category: post
 ---
 
 
-*>>Testado apenas em Windows XP com sucesso*.
+*Testado apenas em Windows XP com sucesso*.
 
 >AppInit_DLLs é uma chave de registro do Windows que é possível programar para uma DLL/EXE ser carregado em pararelo a qualquer aplicativo que é executado
 
