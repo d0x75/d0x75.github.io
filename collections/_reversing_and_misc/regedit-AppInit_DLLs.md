@@ -31,7 +31,7 @@ value 	 = "C:\Windows\System32\notepad.exe" (CAMINHO ONDE A DLL ou EXE QUE VAI S
 
 ---
 
-##### Observações:
+##### Notas:
 
 Podemos descrever o passo a passo de um carregamento externo/paralelo de DLL :
 
