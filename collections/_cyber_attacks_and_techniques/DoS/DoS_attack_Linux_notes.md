@@ -1,5 +1,5 @@
 ---
-title: DoS Attack - very simple and made in linux.
+title: DoS Attack - Muito simpes testado no Linux.
 category: post
 ---
 

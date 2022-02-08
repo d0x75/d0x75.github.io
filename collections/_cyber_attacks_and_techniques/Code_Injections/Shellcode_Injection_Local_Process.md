@@ -3,6 +3,9 @@ title: Injeção de Código - Injection Local Process
 category: post
 ---
 
+>código fonte usado : 
+https://github.com/d0x75/Injector-LocalProcess.git
+
 ## Windows CreateRemoteThread Shellcode Injection and Execution in Local Process
 
 Esse é o clássico Shellcode Injection que fazemos no módulo/processo local do próprio binário compilado com os 
@@ -58,7 +61,8 @@ Quando o shellcode for executado com sucesso, ganhamos acesso na máquina alvo; 
 
 ### Step 2
 
-- Abrir o código fonte que já montei referente a arquitetura que geramos o shellcode acima.
+- Abrir o código fonte pronto mencionado no inicio, que tem o
+código responsável por executar os bytes gerados acima.
 
 		injectlocal.cpp
 

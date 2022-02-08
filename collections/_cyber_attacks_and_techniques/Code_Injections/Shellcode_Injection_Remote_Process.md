@@ -1,7 +1,11 @@
 ---
-title: Injeção de Código - Injection Remote Process
+title: Injeção de Código - Injection Remote Process PID
 category: post
 ---
+
+>código fonte usado : 
+https://github.com/d0x75/Injector-RemoteProcess.git
+
 
 ## Windows CreateRemoteThread Shellcode Injection and Execution in Remote Process
 
@@ -57,7 +61,8 @@ Quando o shellcode for executado com sucesso, ganhamos acesso na máquina alvo; 
 
 ### Step 2
 
-- Abrir o código fonte que já montei referente a arquitetura que geramos o shellcode acima.
+- Abrir o código fonte pronto mencionado no inicio, que tem o
+código responsável por executar os bytes gerados acima.
 
 		injectremotePID.cpp
 

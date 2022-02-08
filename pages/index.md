@@ -32,4 +32,4 @@ aplicar em um ambiente de testes para fins de estudo.
 - Documentar a utilização das ferramentas mais importantes para
 cybersecurity.
 
-- Teçer notas sobre tudo que vou aprendendo de novo!
+- Teçer notas para consultas futuras.
