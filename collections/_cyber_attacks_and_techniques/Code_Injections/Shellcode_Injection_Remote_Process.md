@@ -91,9 +91,9 @@ injectremotePID.exe
 - Anotar o PID do processo/módulo em que iremos injetar o shellcode.
 
 
-```text
-para vermos o PID podemos usar o "ProcessHacker" ou "procexp"
-```
+
+		para vermos o PID podemos usar o "ProcessHacker", "procexp" ou o próprio "Task Menager".
+
 
 - Abrir a porta que colocamos como argumento no msfvenom para gerar o shellcode, no computador com o IP que também colocamos como argumento no msfvenom para gerar o shellcode :
 
