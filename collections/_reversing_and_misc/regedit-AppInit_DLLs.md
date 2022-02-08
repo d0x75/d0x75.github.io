@@ -4,25 +4,30 @@ category: post
 ---
 
 
->>Testado apenas em Windows XP com sucesso.
+*>>Testado apenas em Windows XP com sucesso*.
 
+>AppInit_DLLs é uma chave de registro do Windows que é possível programar para uma DLL/EXE ser carregado em pararelo a qualquer aplicativo que é executado
 
 ---
 
 
-#### AppInit_DLLs é uma chave de registro do Windows que é possível programar para uma DLL/EXE ser carregado em pararelo a qualquer aplicativo que é executado.
+#### Procedimento que deve ser feito no regedit:
 
 
-- Abaixo o caminho até a chave de registro e como modificar seu valor :
+- Seguir o seguinte caminho até a chave de registro : 
 
 ```text
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows
+```
 
+
+- Chegando na reg key acima, clicamos com o botão direito nela, para modificar seu valor. Ficaria mais ou menos assim:
+
+```text
 name 	 = AppInit_DLLs (NOME DA CHAVE QUE TEMOS QUE MODIFICAR)
 
 value 	 = "C:\Windows\System32\notepad.exe" (CAMINHO ONDE A DLL ou EXE QUE VAI SER CARREGADO SE ENCONTRA)
 ```
-
 
 ---
 
