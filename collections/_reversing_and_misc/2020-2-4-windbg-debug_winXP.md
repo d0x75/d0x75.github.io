@@ -15,7 +15,7 @@ date: 2020-2-4
 - No virtual box, clicar na opção "Configurações" > "Portas Seriais"
 - aba Porta 1 > marcar a flag []Habilitar Porta Serial > Preencher os campos da seguinte forma:
 
-```C++		
+```text	
 Número da Porta = COM1
 Modo da Porta = Pipe no Hospedeiro
 flag [ ] = MARCADA
@@ -38,20 +38,22 @@ multi(0)disk(0)rdisk(0)partition(1)\WINDOWS="Debugando o XP" /noexecute=optin /f
 
 1. Configurar os symbols:
 
-
-- Clicar em File > Symbol File Path > SRV*C:\Symbols*https://msdl.microsoft.com/download/symbols > OK
+- Clicar em File > Symbol File Path > 
+``SRV*C:\Symbols*https://msdl.microsoft.com/download/symbols`` > OK
  
 2. Iniciar a depuração
 
 - Clicar em File > Kernel Debug  ou CTRL + K
 - Na aba COM, os dados ficaram preenchidos da seguinte forma:
 
-		Baud Rate = 115200
-		Port = \\.\pipe\COM_1
-		Pipe = [] MARCADA
-		Reconnect = [] DESMARCADA
-		Resets = 0
+
+```text
+Baud Rate = 115200
+Port = \\.\pipe\COM_1
+Pipe = [] MARCADA
+Reconnect = [] DESMARCADA
+Resets = 0
+```
 
 
-
-_voilà_ !
+_Voilà_ !
