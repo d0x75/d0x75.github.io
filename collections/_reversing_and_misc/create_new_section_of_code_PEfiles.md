@@ -8,10 +8,11 @@ category: post
 >link para download :
 https://github.com/d0x75/maleta/raw/main/die_win32_portable_2.05.zip
 
+
 ---
 
 
-#### Procedimento de criação de uma nova sessão de código executável em binários PE.
+#### Procedimento de criação de uma nova sessão de código executável em binários PE, usando DIE.
 
 
 - Abrir o DIE e carregar o binário PE alvo.
@@ -39,7 +40,7 @@ sessões, já saberemos que deu certo criar a sessão.
 
 - Agora para atribuir as permissões/flags padrões de uma sessão de código, clicamos com o botão direito na sessão criada e fazemos o seguinte : 
 
-		Edit header > Entrar em Characteristics > Desmarcar "[] Read only"
+		Edit header > Entrar em "..." DLLCharacteristics > Desmarcar "[] Read only"
 
 - E marcar as seguintes flags :
 
