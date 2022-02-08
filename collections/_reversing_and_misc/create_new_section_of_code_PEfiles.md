@@ -1,5 +1,5 @@
 ---
-title: Windows - Criar Sessão de Código em Binários PE.
+title: Windows- Criar Sessão de Código em Binários PE.
 category: post
 ---
 

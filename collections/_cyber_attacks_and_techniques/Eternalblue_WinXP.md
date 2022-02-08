@@ -3,8 +3,7 @@ title: Exploitation - Eternal Blue ( WinXP )
 category: post
 ---
 
-**EternalBlue WindowsXP**
-
+**Explorando o EternalBlue WindowsXP**
 
 
 #### Enter msfconsole and search vuln
@@ -13,6 +12,7 @@ category: post
 msfconsole
 search eternalblue
 ```
+
 OR
 
 ```ruby
