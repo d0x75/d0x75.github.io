@@ -1,5 +1,5 @@
 ---
-title: Exploit 0x00
+title: Eternal Blue ( WinXP )
 category: post
 ---
 

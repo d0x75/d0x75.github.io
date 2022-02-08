@@ -1,5 +1,5 @@
 ---
-title: Scanning 0x00
+title: Banner Grabing
 category: post
 ---
 
@@ -11,7 +11,7 @@ Técnica utilizada para pegar o banner de algum serviço que esteja rodando no t
 
 ---
 
-### With netcats - Usando o netcat no host '10.10.1.10 ' e na porta '21', exemplo :
+### With netcat - Usando o netcat no host '10.10.1.10 ' e na porta '21', exemplo :
 
 		nc -v 10.10.1.10 21
 

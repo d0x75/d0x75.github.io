@@ -1,5 +1,5 @@
 ---
-title: DoS 0x00
+title: DoS Attack simples ( made in Linux )
 category: post
 ---
 

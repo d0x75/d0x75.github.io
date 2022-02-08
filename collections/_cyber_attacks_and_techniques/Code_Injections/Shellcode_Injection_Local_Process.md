@@ -1,5 +1,5 @@
 ---
-title: Code Injection 0x00
+title: Code Injection - Injection Local Process
 category: post
 ---
 
