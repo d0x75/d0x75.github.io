@@ -18,7 +18,7 @@ collection_order    :
     "reversing_and_misc",
     #"programming",s
     "toolkit_experience",
-    "posts",
+    #"posts",
   ]
 collections:
   cyber_attacks_and_techniques:   
@@ -26,10 +26,10 @@ collections:
     permalink       : /:collection/:title/
     sort_by         : date
     alias           : "Cyber Attacks"
-  toolkit_experience:
+  others:
     output          : true
     permalink       : /:collection/:title/
-    alias           : "Ferramentas"
+    alias           : "Outros"
     #order: # specify post order manually
     #  - crackme-1.md
     #  - post2.md
@@ -43,8 +43,8 @@ collections:
     permalink       : /:collection/:title/
     # An alias should be given or the UNDERSCORE will appeared 
     alias           : "Reversing"
-  posts:
-    output          : true
+  #posts:
+  #  output          : true
 
 # 3. Comment settings（disqus.com）
 disqus_username     : d0x75
