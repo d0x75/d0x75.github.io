@@ -1,5 +1,5 @@
 ---
-title: Scanning - Banner Grabing
+title: Reconnaissance - Banner Grabing
 category: post
 ---
 

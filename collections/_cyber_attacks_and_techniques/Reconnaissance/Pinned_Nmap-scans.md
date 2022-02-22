@@ -1,5 +1,5 @@
 ---
-title: Scanning - Varredura de dados com Nmap
+title: Reconnaissance - nmap Scanning and Enumeration
 category: post
 ---
 
