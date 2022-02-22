@@ -21,13 +21,13 @@ category: post
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows
 ```
 
-- Chegando na reg key acima, clicamos com o botão direito nela, para modificar seu valor. Ficaria mais ou menos assim:
+- Chegando na reg key acima, clicamos com o botão direito nela, para modificar seu valor. Ficará mais ou menos assim:
 
 
 ```text
-name 	 = AppInit_DLLs (NOME DA CHAVE QUE TEMOS QUE MODIFICAR)
+name = AppInit_DLLs (NOME DA CHAVE QUE TEMOS QUE MODIFICAR)
 
-value 	 = "C:\Windows\System32\notepad.exe" (CAMINHO ONDE A DLL ou EXE QUE VAI SER CARREGADO SE ENCONTRA)
+value = "C:\Windows\System32\notepad.exe" (CAMINHO ONDE A DLL ou EXE QUE VAI SER CARREGADO SE ENCONTRA)
 ```
 
 ---
