@@ -12,7 +12,9 @@ encrypted_text: true
 permalink: /
 ---
 
-# RedTeam Security
+<style style="background-color:Tomato;
+# RedTeam Security>
+
 
 <br>
 
