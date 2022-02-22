@@ -29,7 +29,8 @@ https://github.com/d0x75/DoS-Clang_Linux.git
 
 - Obter e Ler o código do link mencionado no início.
 
-- Depois de entender o código e Compilar o código mencionado acima, usando o GCC de forma convencional :
+- Depois de entender e compilar o código mencionado
+acima, usando o GCC de forma convencional :
 
 
 ```bash		
@@ -42,7 +43,8 @@ gcc DoS-linux.c -o DoS
 esconda o IP do dispositivo atacante.
 	
 - Executar o programa compilado no Step 2, e passar
-como argumento o Host e a Porta do alvo, que ficará recebendo as Resquests do atacante.
+como argumento o 'host' e 'port' do alvo, que ficará
+recebendo as requisições até ficar flooded e cair.
 
 exemplos :
 
