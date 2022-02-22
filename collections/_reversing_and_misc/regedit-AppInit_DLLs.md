@@ -8,6 +8,9 @@ category: post
 
 >AppInit_DLLs é uma chave de registro do Windows que é possível programar para uma DLL/EXE ser carregado em pararelo a qualquer aplicativo que é executado
 
+
+![](../imgs/00.png)
+
 ---
 
 
