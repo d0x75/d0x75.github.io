@@ -46,7 +46,7 @@ esconda o IP do dispositivo atacante.
 como argumento o 'host' e 'port' do alvo, que ficará
 recebendo as requisições até ficar flooded e cair.
 
-exemplos :
+_exemplos :_
 
 *Direcionando o DoS para um servidor HTTP(porta 80)* :
 

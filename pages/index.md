@@ -34,3 +34,10 @@ aplicar em um ambiente de testes para fins de estudo.
 - Aprofundar o aprendizado e prática na utilização de ferramentas importantes para cybersecurity.
 
 - Teçer notas para consultas futuras..
+
+
+## Posts em Progresso
+
+- DLL Injection 
+- DoS with Python
+- Montando a parte de Reconnaissance e Info.Gathering
