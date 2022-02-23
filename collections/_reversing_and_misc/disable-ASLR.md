@@ -1,10 +1,10 @@
 ---
-title: Windows- Disabilitar ASLR
+title: Windows - Disabilitar ASLR no Windows
 category: post
 ---
 
 
->O ASLR faz os endereços de memória mudarem a cada vez que o binário PE é carregado. Quando é desabilitada os endereços não ficam mais mudando a cada execução do programa.
+>O ASLR é um mecanismo que faz com que os endereços de memória mudem a cada vez que o binário PE é carregado. Quando é desabilitada os endereços não ficam mais mudando a cada execução do programa.
 
 >Para facilitar usaremos novamente o software :
 *DIE ( Direct it easy versão 2.05 )*
