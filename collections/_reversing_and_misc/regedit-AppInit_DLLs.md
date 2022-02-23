@@ -1,5 +1,5 @@
 ---
-title: Windows- APPInit_Dll Carregamento paralelo de DLL
+title: Windows - APPInit_Dll Carregamento paralelo de DLL
 category: post
 ---
 
