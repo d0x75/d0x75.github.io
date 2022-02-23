@@ -14,33 +14,33 @@ category: post
 #### Procedimento que deve ser feito no regedit:
 
 
-- Seguir o seguinte caminho até a chave de registro :
+- Seguir o seguinte caminho até a seguinte chave de registro :
 
 
 ```text
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows
 ```
 
-- Chegando na reg key acima, clicamos com o botão direito nela, para modificar seu valor. Ficará mais ou menos assim:
+- Ao chegar na chave de registro acima, clicamos com o botão direito nela, para modificar seu valor. Deve ficar com os seguintes valores:
 
 
 ```text
-name = AppInit_DLLs (NOME DA CHAVE QUE TEMOS QUE MODIFICAR)
-
-value = "C:\Windows\System32\notepad.exe" (CAMINHO ONDE A DLL ou EXE QUE VAI SER CARREGADO SE ENCONTRA)
+name = AppInit_DLLs
+value = "C:\Windows\System32\notepad.exe" 
+(CAMINHO ONDE A DLL ou EXE QUE VAI SER CARREGADO SE ENCONTRA)
 ```
 
 ---
 
-##### Notas:
+#### Nota:
 
-Podemos descrever o passo a passo de um carregamento externo/paralelo de DLL :
+Para descrever por exemplo o procedimento do carregamento paralelo de uma DLL maliciosa, podemos seguir essa linha de raciocínio :
 
-1. Arquivo .exe é executado.
+1. Um Binário/Exectável (.exe) é executado pelo usuário.
 
 2. O aplicativo executado e as APIs utilizadas são carregadas na memória.
 
-3. A DLL indicada pelo registro AppInit_DLLs é carregada, caso exista.
+3. A DLL indicada pelo registro AppInit_DLLs também é carregada, caso exista.
 
 4. Todas as DLLs executam sua função principal.
 
