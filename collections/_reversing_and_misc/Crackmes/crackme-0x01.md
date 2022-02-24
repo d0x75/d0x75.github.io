@@ -22,16 +22,17 @@ Abaixo coloquei algumas informações que levantei durante a análise deste bin�
 
 #### Dicas para encontrar a solução
 
-- Breakpoints matadores :
-0x00401347 = Endereço do CMP que é capaz de alterar o fluxo do programa, para fazer um Path por exemplo.
-0x004012D0 = Inicio rotina principal que escreve no console, e que faz um IF para comparar o que digitamos com a string verdadeira.
+> Breakpoints at Adress :
 
-- Chamadas de Funçoes importantes :
+- ```0x00401347``` = Endereço do CMP que é capaz de alterar o fluxo do programa, para fazer um Path por exemplo.
+
+- ```0x004012D0``` = Inicio rotina principal que escreve no console, e que faz um IF para comparar o que digitamos com a string verdadeira.
+
+> Calls importantes :
 
 
-```text
-0x004010B1 = Endereço da CALL que entra na rotina pricipal.
-```
+- ```0x004010B1``` = Endereço da CALL que entra na rotina pricipal.
+
 
 
 ---
@@ -40,10 +41,10 @@ Abaixo coloquei algumas informações que levantei durante a análise deste bin�
 ### Resolvendo o Crackme
 
 
-Na rotina principal (em 0x4012D0) antes do programa chamar o último 'printf'(em 0x40132C), vemos o valor *0x1232B14* sendo movido para a Stack.
+Na rotina principal (em 0x4012D0) antes do programa chamar o último 'printf'(em 0x40132C), vemos o valor *0x1232B14* sendo movido para a Stack. 
 Conforme trecho de código abaixo, copiado do debugger :
 
-```text
+```asm
 0040131E | C745 FC 142B2301         | mov dword ptr ss:[ebp-4],1232B14 |
 ```
 

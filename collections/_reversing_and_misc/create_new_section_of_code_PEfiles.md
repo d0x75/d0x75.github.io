@@ -7,6 +7,7 @@ category: post
 *DIE ( Direct it easy versão 2.05 )*
 
 >link para download :
+
 https://github.com/d0x75/maleta/raw/main/die_win32_portable_2.05.zip
 
 
