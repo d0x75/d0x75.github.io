@@ -49,17 +49,21 @@ Conforme trecho de código abaixo que vemos no debugger :
 ```
 
 
-Depois da 'scanf' que é função que lê os bytes que digitamos no console, temos um if (em 0x401347) que compara os bytes digitados no console com o valor
-que movemos logo acim /\ para a Stack logo acima e depois salta para o último 'printf'. Conforme trecho de código abaixo, copiado do debugger :
+Depois da 'scanf' que é função que lê os bytes que digitamos
+no console, temos um if no adress ```0x401347``` que compara
+os bytes digitados no console com o valor que movemos logo acima /\ para a Stack logo acima e depois salta para o último
+'printf'. Conforme o código abaixo, copiado do debugger :
+
 
 ```assembly
 00401347 | 3B45 FC                  | cmp eax,dword ptr ss:[ebp-4] |
 0040134A | 75 0E                    | jne crackme.40135A           |
 ```
 
-A partir daqui, nós conseguimos alterar o fluxo do programa naquele if (em 0x401347) e já entendemos que a 'Chave' pra resolver o Crackme, é esse valor que foi movido para Stack ( *0x1232B14* ). Então vamos coverter esse valor para Decimal e tentar resolver o Crackme :
+A partir daqui, nós conseguimos alterar o fluxo do programa naquele if do adress ```0x401347``` e já entendemos que a 'Chave' pra resolver o Crackme, é esse valor que foi movido para Stack ( *```0x1232B14```* ). Então vamos coverter esse
+valor para Decimal e tentar resolver o Crackme :
 
-- usei o python para converter aquele valor hexadecimal p/ decimal:
+- usei o python para fazer a conversão de hexa para decimal :
 
 ```python
 >>> print 0x1232B14
