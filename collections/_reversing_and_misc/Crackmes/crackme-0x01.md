@@ -73,7 +73,7 @@ valor para Decimal e tentar resolver o Crackme :
 
 - resolvendo o crackme com a key encontrada:
 
-```bash
+```DOS
 ********************************************
 *            Crackme by @Danofred0         *
 ********************************************
