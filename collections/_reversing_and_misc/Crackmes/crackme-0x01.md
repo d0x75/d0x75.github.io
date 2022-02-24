@@ -87,6 +87,8 @@ Pressione qualquer tecla para continuar. . .
 ```
 
 
-_Voilà_! Flw galera, espero que tenha ficado de boas para entender!
+_Voilà_! 
+
+- Flw galera, espero que tenha ficado de boas para entender!
 
 Qualquer dúvida só chamar =)
