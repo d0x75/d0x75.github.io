@@ -71,7 +71,7 @@ valor para Decimal e tentar resolver o Crackme :
 >>>
 ```
 
-- resolvendo o crackme com a key encontrada:
+- agora rodamos o crackme e usamos a key encontrada:
 
 ```DOS
 ********************************************
