@@ -41,10 +41,10 @@ Abaixo coloquei algumas informações que levantei durante a análise deste bin�
 ### Resolvendo o Crackme
 
 
-Na rotina principal (em 0x4012D0) antes do programa chamar o último 'printf'(em 0x40132C), vemos o valor *0x1232B14* sendo movido para a Stack. 
-Conforme trecho de código abaixo, copiado do debugger :
+Na rotina principal no adress ```0x4012D0``` antes do programa chamar o último 'printf' em ```0x40132C```, vemos o valor **```0x1232B14```** sendo movido para a Stack. 
+Conforme trecho de código abaixo que vemos no debugger :
 
-```asm
+```assembly
 0040131E | C745 FC 142B2301         | mov dword ptr ss:[ebp-4],1232B14 |
 ```
 
