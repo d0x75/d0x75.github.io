@@ -23,7 +23,7 @@ Abaixo coloquei algumas informações que levantei durante a análise deste bin�
 
 >> Calls importantes :
 
-- Função Principal pra analisar : Uma CALL no address ```0x401386```e o Prólogo da mesma no address ```0x4015C0```.
+- Função Principal pra analisar : Uma CALL no address ```0x401386``` e o Prólogo da mesma no address  ```0x4015C0```.
 
 
 > Breakpoints at Adress :
@@ -39,18 +39,23 @@ sem descobrir a key.
 ### Resolvendo o Crackme
 
 
-Vamos direto para o endereço do início da rotina principal (em 0x4015C0 ) para começarmos a resolver o Crackme. Os trechos de código que vemos no
-debugger a partir do endereço que seguimos, já nos mostra algumas CALLS que são feitas no console .. até que o programa solicite a 'Key'.
+- Vamos seguir o adress ```0x4015C0```, que é aonde começa a rotina principal do programa, para começarmos a resolver o Crackme.
+Os trechos de código que vemos no debugger a partir do endereço que seguimos, já nos mostra algumas *CALLS* que são feitas no console .. até que o programa solicite a 'Key'.
 
-Após a função 'scanf' ler os bytes que digitamos no console, são movidos 2 valores para a Stack ( em 0x401612 e 0x40161A ) que posteriormente são
-usados na função 'strcmp' para comparar com os dados digitados pelo usuário. Conforme trecho de código abaixo, copiado do debugger :
+- Após a função 'scanf' ler os bytes que digitamos no console, são movidos 2 valores para a Stack nos adress ``0x401612`` e ``0x40161A`` e que posteriormente são usados na função 'strcmp' para comparar com os dados digitados pelo usuário.
+
+> Conforme trecho de código abaixo, copiado do debugger :
 
 ```assembly
 00401612 | C74424 1C 30372F31       | mov dword ptr ss:[esp+1C],312F3730 |
 0040161A | C74424 20 302F3937       | mov dword ptr ss:[esp+20],37392F30 |
 ```
 
-Se montarmos uma string com esses valores movidos para a Stack, temos a seguinte string : '30372F31302F3937'. Adivinha o que acontece se convertermos a string '30372F31302F3937' ? Voilà, we found the *Key ='07/10/97'*
+Se montarmos uma string com esses valores movidos para a Stack, temos a seguinte string : **30372F31302F3937**. 
+
+> Adivinha o que acontece se convertermos a string acima ??
+
+_Voilà, we found the *Key ='07/10/97'*_
 
 - usei o python para fazer a conversão da string :
 
