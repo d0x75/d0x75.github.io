@@ -51,11 +51,11 @@ Após a função 'scanf' ler os bytes que digitamos no console, são movidos 2 v
 0040161A | C74424 20 302F3937       | mov dword ptr ss:[esp+20],37392F30 |
 ```
 
-Se montarmos uma string com esses valores movidos para a Stack, temos a seguinte string : ```**30372F31302F3937**```
+Se montarmos uma string com esses valores movidos para a Stack, temos a seguinte string : ```30372F31302F3937```
 
 > Adivinha o que acontece se convertermos a string acima para ASCII ??
 
-_Voilà, we found the **Key ='07/10/97'**_
+> **Voilà**, Chave encontrada ```Key ='07/10/97'```
 
 - usei o python para fazer a conversão da string :
 
