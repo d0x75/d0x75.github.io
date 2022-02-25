@@ -40,7 +40,7 @@ sem descobrir a key.
 
 
 - Vamos seguir o adress ```0x4015C0```, que é aonde começa a rotina principal do programa, para começarmos a resolver o Crackme.
-Os trechos de código que vemos no debugger a partir do endereço que seguimos, já nos mostra algumas *CALLS* que são feitas no console .. até que o programa solicite a 'Key'.
+Os trechos de código que vemos no debugger a partir do endereço que seguimos, já nos mostra algumas *CALLS* que são feitas no console .. até que o programa solicite a _Key_.
 
 - Após a função 'scanf' ler os bytes que digitamos no console, são movidos 2 valores para a Stack nos adress ``0x401612`` e ``0x40161A`` e que posteriormente são usados na função 'strcmp' para comparar com os dados digitados pelo usuário.
 
@@ -51,15 +51,13 @@ Os trechos de código que vemos no debugger a partir do endereço que seguimos, 
 0040161A | C74424 20 302F3937       | mov dword ptr ss:[esp+20],37392F30 |
 ```
 
-Se montarmos uma string com esses valores movidos para a Stack, temos a seguinte string : **30372F31302F3937**. 
+Se montarmos uma string com esses valores movidos para a Stack, temos a seguinte string : ```**30372F31302F3937**```
 
-> Adivinha o que acontece se convertermos a string acima ??
+> Adivinha o que acontece se convertermos a string acima para ASCII ??
 
-_Voilà, we found the *Key ='07/10/97'*_
+_Voilà, we found the **Key ='07/10/97'**_
 
 - usei o python para fazer a conversão da string :
-
-
 
 ```python
 >>> string = '30372F31302F3937'
@@ -68,7 +66,7 @@ _Voilà, we found the *Key ='07/10/97'*_
 >>>
 ```
 
-- resolvendo o crackme com a key encontrada :
+- resolvendo o crackme com a Key encontrada :
 
 
 ```DOS
