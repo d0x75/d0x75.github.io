@@ -55,9 +55,9 @@ Se montarmos uma string com esses valores movidos para a Stack, temos a seguinte
 
 > Adivinha o que acontece se convertermos a string acima para ASCII ??
 
-> **Voilà**, Chave encontrada ```Key ='07/10/97'```
+> **Voilà**, Chave encontrada ```Key='07/10/97'```
 
-- usei o python para fazer a conversão da string :
+- usado o python para converter a string, e chegar na data acima :
 
 ```python
 >>> string = '30372F31302F3937'
@@ -66,7 +66,7 @@ Se montarmos uma string com esses valores movidos para a Stack, temos a seguinte
 >>>
 ```
 
-- resolvendo o crackme com a Key encontrada :
+- resolvendo o crackme com a _Key_ encontrada :
 
 
 ```DOS
