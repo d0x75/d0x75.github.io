@@ -39,10 +39,10 @@ sem descobrir a key.
 ### Resolvendo o Crackme
 
 
-- Vamos seguir o adress ```0x4015C0```, que é aonde começa a rotina principal do programa, para começarmos a resolver o Crackme.
+Vamos seguir o adress ```0x4015C0```, que é aonde começa a rotina principal do programa, para começarmos a resolver o Crackme.
 Os trechos de código que vemos no debugger a partir do endereço que seguimos, já nos mostra algumas *CALLS* que são feitas no console .. até que o programa solicite a _Key_.
 
-- Após a função 'scanf' ler os bytes que digitamos no console, são movidos 2 valores para a Stack nos adress ``0x401612`` e ``0x40161A`` e que posteriormente são usados na função 'strcmp' para comparar com os dados digitados pelo usuário.
+Após a função 'scanf' ler os bytes que digitamos no console, são movidos 2 valores para a Stack nos adress ``0x401612`` e ``0x40161A`` e que posteriormente são usados na função 'strcmp' para comparar com os dados digitados pelo usuário.
 
 > Conforme trecho de código abaixo, copiado do debugger :
 
