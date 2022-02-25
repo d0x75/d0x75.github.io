@@ -1,5 +1,5 @@
 ---
-title: Crackme 0x01
+title: Crackme - 0x01
 ---
 
 Fala galera blza?, primeiramente .. Obrigado por compartilhar esse Crackme e fico muito feliz em poder analisar-lo.

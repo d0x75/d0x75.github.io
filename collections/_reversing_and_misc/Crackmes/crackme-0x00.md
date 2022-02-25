@@ -1,5 +1,5 @@
 ---
-title: Crackme 0x00
+title: Crackme - 0x00
 ---
 
 Fala galera blza?, primeiramente .. Obrigado por compartilhar esse Crackme e fico muito feliz em poder analisar-lo.
@@ -55,7 +55,7 @@ Se montarmos uma string com esses valores movidos para a Stack, temos a seguinte
 
 > Adivinha o que acontece se convertermos a string acima para ASCII ??
 
-> **Voilà**, Chave encontrada ```Key='07/10/97'```
+> **Voilà**, _Key_ encontrada com sucesso : ```07/10/97```
 
 - usado o python para converter a string, e chegar na data acima :
 
