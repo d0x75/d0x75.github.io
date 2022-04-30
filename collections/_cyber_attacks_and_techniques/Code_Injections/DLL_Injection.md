@@ -1,5 +1,5 @@
 ---
-title: Injeção de Código - DLL Injection ( in progress )
+title: Code Injection - DLL Injection ( in progress )
 category: post
 ---
 
