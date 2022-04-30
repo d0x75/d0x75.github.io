@@ -1,5 +1,5 @@
 ---
-title: DoS Attack - with Clang
+title: Attacks - DoS with Clang
 category: post
 ---
 
