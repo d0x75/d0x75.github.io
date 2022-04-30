@@ -24,21 +24,15 @@ Operador de RedTeam.
 ## Objetivos
 
 - Entender como diversos ataques cibernéticos funcionam e
-aplicar em um ambiente de testes para fins de estudo.
+aplicar na prática em ambientes de testes para fins de estudo.
 
 - Aprender como malwares são escritos, e escrever exemplos genéricos para estudo.
 
-- Escrever códigos para simular ferramentas de ataque e técnicas usadas por malwares.
-
-- Aprofundar aprendizado em Reversing,C++,Windows Internals e Windows API.
-
-- Aprofundar o aprendizado e prática na utilização de ferramentas importantes para cybersecurity.
-
-- Teçer notas para consultas futuras..
+- Reversing at all !
 
 
 ## Posts em Progresso
 
-- DLL Injection 
-- DoS with Python
-- Montando a parte de Reconnaissance e Info.Gathering
+- DLL Injection case
+- DLL Hijacking case
+- Buffer OverFlow Exploited
