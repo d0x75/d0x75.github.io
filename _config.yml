@@ -1,12 +1,12 @@
 # 1. Site Settings
-title               : RedTeamBox
+title               : Hacking Notes
 owner               : "d0x75"
 url                 : "https://d0x75.github.io/"
 #baseurl             : "http://localhost:4000"
 permalink           : /:title/
-description         : "Read Team"
+description         : "Hacking"
 markdown            : kramdown
-statement           : "red team stuff"
+statement           : "my experiences"
 bgtext              : "ABCFGHKLMNPQRSVWXYZabcdefghijklmnopqrstuvwxyz@#$%&*+-;/[]<>~" # texts randomly displayed in background
 
 # 2. Your Collections
@@ -16,9 +16,9 @@ collection_order    :
   [
     "cyber_attacks_and_techniques",
     "reversing_and_misc",
-    #"programming",s
+    "programming",
     "toolkit_experience",
-    #"posts",
+    "posts",
   ]
 collections:
   cyber_attacks_and_techniques:   
@@ -30,21 +30,21 @@ collections:
     output          : true
     permalink       : /:collection/:title/
     alias           : "Outros"
-    #order: # specify post order manually
-    #  - crackme-1.md
-    #  - post2.md
-    #  - post1.md
- # programming:
- #   output          : true
- #   permalink       : /:collection/:title/
- #   sort_by         : date
+    order: # specify post order manually
+      - crackme-1.md
+      - post2.md
+      - post1.md
+ programming:
+   output          : true
+   permalink       : /:collection/:title/
+   sort_by         : date
   reversing_and_misc:
     output          : true
     permalink       : /:collection/:title/
     # An alias should be given or the UNDERSCORE will appeared 
     alias           : "Reversing"
-  #posts:
-  #  output          : true
+  posts:
+    output          : true
 
 # 3. Comment settings（disqus.com）
 disqus_username     : d0x75

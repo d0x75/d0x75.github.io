@@ -12,27 +12,28 @@ encrypted_text: true
 permalink: /
 ---
 
-# RedTeam Security
+# Reverse Engineer | Malware Analyst | Offensive Security Engineer | Information Security Analyst.
 
 
 <br>
 
->Esse site é inteiramente dedicado a assuntos voltadas para Offensive Security, meu foco é me tornar um
-Operador de RedTeam.
+>Nessa página você vai encontrar Notas que eu resolvi Tecer sobre tudo que estudo e aprendo na área. A finalidade é eventualmente AJUDAR ALGUM CURIOSO DA ÁREA e com certeza ME AJUDAR quando precisar ver uma coisa que não lembro de cabeça =)
 
 
 ## Objetivos
 
-- Entender como diversos ataques cibernéticos funcionam e
-aplicar na prática em ambientes de testes para fins de estudo.
+- Usar minhas notas brutas para Teçer esses posts de maneira detalhada e didática, para fácil entendimento em consulta posteriores a estes.
 
-- Aprender como malwares são escritos, e escrever exemplos genéricos para estudo.
+- Compartilhamento de conhecimento !
 
 - Reversing at all !
 
 
 ## Posts em Progresso
 
-- DLL Injection case
-- DLL Hijacking case
-- Buffer OverFlow Exploited
+- DLL Injection case...
+- DLL Hijacking case...
+- Buffer OverFlow Exploited...
+- Rootkits...
+- Crackmes...
+- Malwares...
